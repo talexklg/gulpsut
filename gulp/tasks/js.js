@@ -1,8 +1,7 @@
 import webpack from "webpack-stream";
 
 export const js = () => {
-    return app.gulp
-      .src(app.path.src.js, { sourcemap: true })
+    return app.gulp.src(app.path.src.js, { sourcemap: true })
           .pipe(app.plugins.plumber(
               app.plugins.notify.onError({
               title: "JS",

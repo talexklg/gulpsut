@@ -13,7 +13,8 @@
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
-
+	background-color: rgba(0, 0, 0, 0.384);
+	
 		&__body {
 			position: relative;
 			color: azure;
@@ -23,7 +24,7 @@
 			justify-content: flex-start;
 			align-items: center;
 			flex-direction: column;
-			background-color: rgba(0, 0, 0, 0.384);
+			
 		}
 
 		&__pre-title {

@@ -1,11 +1,9 @@
 html(lang='ru')
-    head
-        link(rel="stylesheet", href="css/style.min.css")
+    include html/head
     body 
-        include html/header
+        include html/header_main
         main.page
             h1 Привет!
             span  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit nam quam optio, magnam, voluptatum error quod quae praesentium nobis non quis sit vitae corporis consectetur deserunt impedit, animi autem.
-            img(src="@img/photo_1.jpg")
         include html/footer
         script(src="js/app.min.js")

@@ -1,14 +1,44 @@
 
-<html>
+<html lang="ru">
   <head>
-    <link rel="stylesheet" href="css/style.min.css?_v=20221115140714"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/index.min.css"/>
+    <title>МАУДО СЮТ</title>
   </head>
   <body> 
-    <header class="header"></header>
+    <header class="header-main">
+      <div class="full-screen"> 
+        <div class="full-screen__body"> 
+          <div class="full-screen__pre-title">Муниципальное автономное учреждение дополнительного образования города Калининграда</div>
+          <div class="full-screen__title">Станция юных техников</div>
+          <div class="full-screen__text">236006, Калининград, Московский проспект, 98 | тел. +7 (4012) 97 33 96 | email: gsyut@edu.klgd.ru</div>
+        </div>
+        <div class="full-screen__video">
+          <video class="full-screen__video-item" preload="auto" loop="loop" muted="muted" autoplay="autoplay">
+            <source src="video/technomix.webm" type="video/webm"/>
+            <source src="video/technomix.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <nav class="menu"> 
+          <ul class="menu__list">
+            <li><a class="menu__list-item" href="#">Главная</a></li>
+            <li><a class="menu__list-item" href="#">Новости</a></li>
+            <li><a class="menu__list-item" href="#">Объединения</a></li>
+            <li><a class="menu__list-item" href="#">Расписание</a></li>
+            <li><a class="menu__list-item" href="#">Педагоги</a></li>
+            <li><a class="menu__list-item" href="#">Дистант</a></li>
+            <li><a class="menu__list-item" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main class="page">
-      <h1>Привет!</h1><span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit nam quam optio, magnam, voluptatum error quod quae praesentium nobis non quis sit vitae corporis consectetur deserunt impedit, animi autem.</span><picture><source srcset="img/photo_1.webp" type="image/webp"><img src="img/photo_1.jpg"/></picture>
+      <h1>Привет!</h1><span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit nam quam optio, magnam, voluptatum error quod quae praesentium nobis non quis sit vitae corporis consectetur deserunt impedit, animi autem.</span>
     </main>
     <footer class="footer"></footer>
-    <script src="js/app.min.js?_v=20221115140714"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

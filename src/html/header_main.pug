@@ -1,11 +1,14 @@
 header.header-main
-    .conteiner 
-        .full-screen 
-            .full-screen__body 
-                .full-screen__title 
-                .full-screen__text
-        .video
-            video(preload="auto" loop muted autoplay controls).video__item
-                source(src="#" type="video/webm")
-                source(src="#" type="video/mp4")
+    .full-screen 
+        .full-screen__body 
+            .full-screen__pre-title Муниципальное автономное учреждение дополнительного образования города Калининграда
+            .full-screen__title Станция юных техников
+            .full-screen__text 236006, Калининград, Московский проспект, 98 | тел. +7 (4012) 97 33 96 | email: gsyut@edu.klgd.ru
+        .full-screen__video
+            video(preload="auto" loop muted autoplay).full-screen__video-item
+                source(src="video/technomix.webm" type="video/webm")
+                source(src="video/technomix.mp4" type="video/mp4")
+        include menu
+
+
 

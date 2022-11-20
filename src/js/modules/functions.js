@@ -14,3 +14,13 @@ export function isWebp() {
         document.documentElement.classList.add(className);
     });
 }
+
+export function classToggle() {
+    let ul_element = document.querySelector('.menu');
+    ul_element.onclick = function(e){
+        let li_elements = ul_element.querySelector('.menu__list-item_active');
+        li_elements.classList.remove('menu__list-item_active');
+        let li_target = e.target;
+        li_target.classList.add('menu__list-item_active');
+    }
+}

@@ -7,7 +7,7 @@
 
 .header-main {
 	width: 100%;
-	height: 92vh;
+	height: 95%;
 
 }
 .full-screen {
@@ -15,33 +15,36 @@
 	position: relative;
 	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
+
 	&__body {
 		position: relative;
 		color: azure;
 		z-index: 2;
 		display: flex;
-		flex: 1 1 auto;
+		width: 90%;
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
 		background-color: rgba(0, 0, 0, 0.4);
 		font-family: sans-serif;
+		padding-left: 30px;
 	}
 	&__pre-title {
-		font-size: 1.2rem;
+		font-size: max(12px,calc((19vw - 1.1rem) / 10));
 		letter-spacing: 1px;
 		padding-top: 10px;
 		text-shadow: 2px 2px 5px rgb(0, 0, 0), -2px -2px 5px rgb(0, 0, 0);
 	}
 	&__title {
 		text-transform: uppercase;
-		font-size: 4rem;
+		font-size: max(24px,calc(5px + 5vw));
 		letter-spacing: 3px;
 		text-shadow: 4px 4px 10px rgb(0, 0, 0), -4px -4px 10px rgb(0, 0, 0);
+		margin: 0;
+		font-weight: 400;
 	}
 	&__text {
-		font-size: 1.2rem;
+		font-size: max(12px,calc((18vw - .9rem) / 10));
 		letter-spacing: 1px;
 		text-shadow: 2px 2px 5px rgb(0, 0, 0), -2px -2px 5px rgb(0, 0, 0);
 	}
@@ -52,6 +55,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+	}
+	&__image {
+		z-index: 5;
+		max-width: 10%;
+		margin-right: 20px;
+		flex: 1 1 0;
+
+	}
+	&__image img {
+		max-width: 100%;
+		object-fit: cover;
 	}
 }
 

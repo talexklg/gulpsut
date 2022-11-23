@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	//outline: 1px solid orange;
 	box-sizing: border-box;
 	margin: 0;
@@ -21,13 +23,13 @@
 		color: azure;
 		z-index: 2;
 		display: flex;
-		width: 90%;
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
 		background-color: rgba(0, 0, 0, 0.5);
 		font-family: sans-serif;
 		padding-left: 30px;
+		flex: 0 1 100%;
 	}
 	&__pre-title {
 		font-size: max(10px,1.65vw);
@@ -46,13 +48,15 @@
 	&__title::after {
 		content: "";
 		display: block;
-		width: 4vw;
-		height: 4vw;
-		background-image: url(../img/logo_SUT.png);
+		width: 8vw;
+		height: 8vw;
 		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 2;
+		background-image:  url(../img/logo_SUT.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 2.0vw;
+		right: 2.0vw;
+
 	}
 	&__text {
 		font-size: max(10px,1.57vw);
@@ -67,17 +71,7 @@
         height: 100%;
         object-fit: cover;
 	}
-	&__image {
-		z-index: 2;
-		max-width: 10%;
-		padding: 1vw 1vw 0 0;
-		flex: 1 1 1;
-		background-color: rgba(0, 0, 0, 0.5);
-	}
-	&__image img {
-		max-width: 100%;
-		object-fit: cover;
-	}
+
 }
 
 .marquee-container {

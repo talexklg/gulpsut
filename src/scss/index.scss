@@ -15,36 +15,47 @@
 	position: relative;
 	min-height: 100vh;
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.4);
+	
 	&__body {
 		position: relative;
 		color: azure;
 		z-index: 2;
 		display: flex;
-		width: 89%;
+		width: 90%;
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
-		
+		background-color: rgba(0, 0, 0, 0.5);
 		font-family: sans-serif;
 		padding-left: 30px;
 	}
 	&__pre-title {
-		font-size: max(12px,calc(2.1vw - 5px));
+		font-size: max(10px,1.65vw);
 		letter-spacing: 1px;
 		padding-top: 10px;
 		text-shadow: 2px 2px 5px rgb(0, 0, 0), -2px -2px 5px rgb(0, 0, 0);
 	}
 	&__title {
 		text-transform: uppercase;
-		font-size: max(24px, calc(5.6vw - 5px));
+		font-size: max(24px, 5.3vw);
 		letter-spacing: 3px;
 		text-shadow: 4px 4px 10px rgb(0, 0, 0), -4px -4px 10px rgb(0, 0, 0);
 		margin: 0;
 		font-weight: 400;
 	}
+	&__title::after {
+		content: "";
+		display: block;
+		width: 4vw;
+		height: 4vw;
+		background-image: url(../img/logo_SUT.png);
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
 	&__text {
-		font-size: max(12px,calc(2.0vw - 5px));
+		font-size: max(10px,1.57vw);
 		letter-spacing: 1px;
 		text-shadow: 2px 2px 5px rgb(0, 0, 0), -2px -2px 5px rgb(0, 0, 0);
 	}
@@ -57,11 +68,11 @@
         object-fit: cover;
 	}
 	&__image {
-		z-index: 5;
-		max-width: 11%;
-		margin: 1vw 1vw 0 0;
-		flex: 1 1 0;
-
+		z-index: 2;
+		max-width: 10%;
+		padding: 1vw 1vw 0 0;
+		flex: 1 1 1;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 	&__image img {
 		max-width: 100%;
@@ -111,7 +122,7 @@
 			display:flex;
 			justify-content: space-around;
 			list-style-type: none;
-			margin: 0 20px;
+			//margin: 0 20px;
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			cursor: pointer;

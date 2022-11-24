@@ -1,9 +1,10 @@
 - var i = 0
 nav.menu 
     ul.menu__list
-        each name in ['Главная', 'Новости', 'Объединения', 'Расписание', 'Педагоги', 'Записаться', 'Контакты']
+        each name in ['Главная', 'Новости', 'Объединения', 'Расписание', 'Записаться', 'Информация']
             li
                 if i == 0
                     a.menu__list-item.menu__list-item_active(href="#"+(i++))= name
                 else 
                     a.menu__list-item(href="#"+(i++))= name
+

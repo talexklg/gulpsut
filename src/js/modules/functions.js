@@ -16,7 +16,7 @@ export function isWebp() {
 }
 
 export function classToggle() {
-    let ul_element = document.querySelector('.menu');
+    let ul_element = document.querySelector('.menu__list');
     ul_element.onclick = function(e){
         let li_elements = ul_element.querySelector('.menu__list-item_active');
         li_elements.classList.remove('menu__list-item_active');

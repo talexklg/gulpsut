@@ -165,19 +165,22 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	position: fixed;
 	top: 0;
 	background-color: $color3;
+	display: flex;
+	justify-content: space-between;
 
 	&__list {
 		display:flex;
 		justify-content: space-around;
 		list-style-type: none;
 		text-transform: uppercase;
-		margin-top: 2.4vh;
+		align-items:center;
 		cursor: pointer;
 		font-family: sans-serif;
 	}
 	&__list-item {
 		font-size: max(14px, 1.5vw);
-		padding: 0.5vw 1vw;
+		padding: 1vw;
+		align-self: center;
 		border-radius: 20px;
 		color:$color1;
 		text-decoration: none;
@@ -186,7 +189,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	}
 	
 	&__list-item:hover {
-		text-decoration: ;
+		font-weight: 700;
+		transition: all .3s ease-in-out;
 	}
 	&__list-item_active {
 		color: $color3;
@@ -195,7 +199,19 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		box-shadow: 0 0 20px 8px $color1;
 		background-color: $color1;
 	}
+	&__icons {
+		display: flex;
+		justify-content: flex-end;
+		padding: 10px;
+		flex-shrink: 0;
+	}
+	&__icons_search {
+		flex-shrink: 0;
 
+	}
+	&__icons_eye {
+		flex-shrink: 0;
+	}
 }
 .page {
 	position: relative;

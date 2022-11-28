@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
 		font-family: sans-serif;
 		padding-left: 2vw;
 		flex: 0 1 100%;
@@ -89,8 +89,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	&__title::after {
 		content: "";
 		display: block;
-		width: 9.5vw;
-		height: 9.5vw;
+		width: 8.0vw;
+		height: 8.0vw;
 		position: absolute;
 		background-image:  url(../img/logo_SUT.png);
 		background-repeat: no-repeat;
@@ -178,8 +178,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		font-family: sans-serif;
 	}
 	&__list-item {
-		font-size: max(14px, 1.5vw);
-		padding: 1vw;
+		font-size: max(14px, 1.0vw);
+		padding: 0 1.4vw;
 		align-self: center;
 		border-radius: 20px;
 		color:$color1;
@@ -201,16 +201,29 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	}
 	&__icons {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
+		width: 250px;
 		padding: 10px;
 		flex-shrink: 0;
+		align-items: center;
 	}
-	&__icons_search {
-		flex-shrink: 0;
-
+	&__icons form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 180px;
 	}
-	&__icons_eye {
-		flex-shrink: 0;
+	&__icons input {
+		padding: 2px 10px;
+		width: 155px;
+		border-radius:2px;
+	}
+	&__icons .button {
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/search.svg);
+		background-size: cover;
+		
 	}
 }
 .page {

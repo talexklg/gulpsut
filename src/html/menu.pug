@@ -1,14 +1,15 @@
 - var i = 0
 nav.menu 
-    ul.menu__list
+    .menu__list
         each name in ['Главная', 'Новости', 'Объединения', 'Расписание', 'Записаться', 'Информация']
-            li
-                if i == 0
-                    a.menu__list-item.menu__list-item_active(href="#"+(i++))= name
-                else 
-                    a.menu__list-item(href="#"+(i++))= name
-    .menu__icons
-        img.menu__search(src="img/search.svg" alt="поиск")
+            if i == 0
+                a.menu__list-item.menu__list-item--active(href="#"+(i++))= name
+            else 
+                a.menu__list-item(href="#"+(i++))= name
+    .menu__form
+        form.form-menu
+            input.form-menu__input.input(type="text" placeholder="Поиск по сайту...")
+            button.form-menu__button.butten(type="submit")
         img.menu__eye(src="img/eye.svg" alt="для слабовидящих")
     
 

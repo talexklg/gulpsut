@@ -186,13 +186,15 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		text-decoration: none;
 		transition: all .3s ease-in-out;
 		flex: 1 1 auto;
+		
+		&:hover {
+			font-weight: 700;
+			transition: all .3s ease-in-out;
+		}
 	}
 	
-	&__list-item:hover {
-		font-weight: 700;
-		transition: all .3s ease-in-out;
-	}
-	&__list-item_active {
+	
+	&__list-item--active {
 		color: $color3;
 		border: 3px solid $color1;
 		font-weight: 700;

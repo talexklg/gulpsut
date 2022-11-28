@@ -18,13 +18,13 @@ export function isWebp() {
 export function classToggle() {
     let ul_element = document.querySelector('.menu__list');
     ul_element.onclick = function(e){
-        let li_elements = ul_element.querySelector('.menu__list-item_active');
+        let li_elements = ul_element.querySelector('.menu__list-item--active');
         if(li_elements && e.target.tagName != this.tagName) {
-            li_elements.classList.remove('menu__list-item_active');
+            li_elements.classList.remove('menu__list-item--active');
         }
         let li_target = e.target;
         if(e.target.tagName != this.tagName) {
-            li_target.classList.add('menu__list-item_active');
+            li_target.classList.add('menu__list-item--active');
         }
     }
 }

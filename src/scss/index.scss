@@ -6,7 +6,9 @@ $color4: #007EA7;
 $color5: #00A8E8;
 
 /* Default styles */
-
+* {
+	outline: 1px solid orange;
+}
 *, *::after, *::before {
 	margin: 0;
     padding: 0;
@@ -41,15 +43,14 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 
 .header-main {
 	width: 100%;
-	height: 95%;
-
+	margin-top: 8.5vh;
 }
 .full-screen {
 	background: #000;
 	position: relative;
-	min-height: 100vh;
+	min-height: 92%;
 	display: flex;
-	margin-top: 8vh;
+	
 	
 	&__body {
 		position: relative;
@@ -157,11 +158,10 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
     }
 }
 
-
 .menu {
 	min-width: 100%;
-	height: 8vh;
-	z-index: 10;
+	height: 8.5vh;
+	z-index: 5;
 	position: fixed;
 	top: 0;
 	background-color: $color3;
@@ -169,17 +169,20 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	justify-content: space-between;
 
 	&__list {
-		display:flex;
+		display: flex;
 		justify-content: space-around;
 		list-style-type: none;
 		text-transform: uppercase;
-		align-items:center;
+		align-items: center;
 		cursor: pointer;
 		font-family: sans-serif;
 	}
+
 	&__list-item {
 		font-size: max(14px, 1.0vw);
-		padding: 0 1.4vw;
+		font-weight: bold;
+		padding: 0.8vh 1.4vw;
+		margin: 0.5vw;
 		align-self: center;
 		border-radius: 20px;
 		color:$color1;
@@ -188,46 +191,46 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		flex: 1 1 auto;
 		
 		&:hover {
-			font-weight: 700;
-			transition: all .3s ease-in-out;
+			color: $color3;
+			background-color: $color1;
 		}
+
+
 	}
-	
-	
+
 	&__list-item--active {
 		color: $color3;
-		border: 3px solid $color1;
-		font-weight: 700;
-		box-shadow: 0 0 20px 8px $color1;
+		border: 1px solid $color1;
+		box-shadow: 0 0 10px 8px $color1;
 		background-color: $color1;
 	}
-	&__icons {
+
+	&__form {
 		display: flex;
-		justify-content: space-between;
-		width: 250px;
-		padding: 10px;
-		flex-shrink: 0;
-		align-items: center;
-	}
-	&__icons form {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 180px;
-	}
-	&__icons input {
-		padding: 2px 10px;
-		width: 155px;
-		border-radius:2px;
-	}
-	&__icons .button {
-		width: 20px;
-		height: 20px;
-		background-image: url(../img/search.svg);
-		background-size: cover;
+		align-items:center;
+		cursor: pointer;
+		flex-grow: 1.5;
+		justify-content: space-around;
+
 		
 	}
 }
+
+.form__input-text {
+	display: inline-block;
+	height: 20px;
+	width: 0;
+}
+
+.form__input-submit {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/search.svg) center center no-repeat;
+}
+
+
+
 .page {
 	position: relative;
 	z-index: 2;

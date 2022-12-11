@@ -3,13 +3,13 @@ nav.menu
     .menu__list
         each name in ['Главная', 'Новости', 'Объединения', 'Расписание', 'Записаться', 'Информация']
             if i == 0
-                a.menu__list-item.menu__list-item--active(href="#"+(i++))= name
+                a.menu__list-item.menu__list-item--active(href="#"+(i++) title=name)= name
             else 
-                a.menu__list-item(href="#"+(i++))= name
+                a.menu__list-item(href="#"+(i++) title=name)= name
     .menu__form
-        form.menu__form-item.form
-            input.form__input.input(type="text" placeholder="Поиск по сайту...")
-            button.form__button.button(type="submit")
-        img.menu__eye(src="img/eye.svg" alt="для слабовидящих")
-    
+        form.menu__form-item(autocomplete="on")
+            input.form__input-text(type="text" placeholder="Поиск по сайту...")
+            input.form__input-submit(type="submit" value="")
+        a.menu__link(href="#")    
+            img.menu__eye(src="img/eye.svg" alt="для слабовидящих")
 

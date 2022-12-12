@@ -210,23 +210,48 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		align-items:center;
 		cursor: pointer;
 		flex-grow: 1.5;
-		justify-content: space-around;
+		justify-content: flex-end;
 
 		
+	}
+
+	&__form-item {
+		margin-right: 1vw;
+	}
+
+	&__link {
+		margin-right: 1vw;
 	}
 }
 
 .form__input-text {
 	display: inline-block;
-	height: 20px;
-	width: 0;
+	height: 10px;
+	border: 0;
+  	color: $color3;
+  	padding: 3px;
+  	width: 0px;
+  	background: none;
+  	z-index: 3;
+  	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  	cursor: pointer;
+
+	:focus {
+		width: 300px;
+		
+	}
+	:focus:hover {
+		border: 1px solid $color1;
+	}
 }
+
 
 .form__input-submit {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	background: url(../img/search.svg) center center no-repeat;
+	background-size: cover;
 }
 
 

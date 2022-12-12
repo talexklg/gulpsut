@@ -6,9 +6,9 @@ $color4: #007EA7;
 $color5: #00A8E8;
 
 /* Default styles */
-* {
-	outline: 1px solid orange;
-}
+// * {
+	// outline: 1px solid orange;
+// }
 *, *::after, *::before {
 	margin: 0;
     padding: 0;
@@ -208,7 +208,6 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	&__form {
 		display: flex;
 		align-items:center;
-		cursor: pointer;
 		flex-grow: 1.5;
 		justify-content: flex-end;
 
@@ -248,10 +247,11 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 
 .form__input-submit {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 22px;
+	height: 22px;
 	background: url(../img/search.svg) center center no-repeat;
 	background-size: cover;
+	//cursor: pointer;
 }
 
 

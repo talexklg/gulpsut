@@ -191,7 +191,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 		flex: 1 1 auto;
 		
 		&:hover {
-			color: $color3;
+			color: yellow;
 			background-color: $color1;
 		}
 
@@ -251,7 +251,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: inherit;}
 	height: 22px;
 	background: url(../img/search.svg) center center no-repeat;
 	background-size: cover;
-	//cursor: pointer;
+	cursor: pointer;
 }
 
 
